@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zoo</title>
+    <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+</head>
+<body>
+  <div id='mocha'></div>
+  <div id='fixtures'>
+        <ul class='animals'></ul>
+  </div>
+
+
+    <!-- library scripts -->
+    <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+    <script src="http://chaijs.com/chai.js"></script>
+
+    <!-- Mocha Setup -->
+    <script>mocha.setup('tdd')</script> <!-- this tells mocha we're using TDD style -->
+
+    <!-- Our code... -->
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src='../js/zoo.js'></script>
+
+    <!-- And our tests! -->
+    <script src="test/specs/zoo.js"></script>
+
+    <!-- Kick the whole thing off... -->
+    <script>mocha.run();</script>
+</body>
+</html>
+
+<!-- unit testing  -->
+<!--This is called a test harness -->
+<!-- This is = tdd - test driven development OR BDD is the other option = behavior driven development-->
